@@ -5,3 +5,11 @@
   <button class="btn btn-xs btn-info">Add new?</button>
 {{/link-to}}
 <hr />
+
+
+{{#each}}
+  <div class="this-department">
+    <img {{bind-attr src=imageURL}}>
+    <h5>{{title}}</h5>
+  </div>
+{{/each}}
