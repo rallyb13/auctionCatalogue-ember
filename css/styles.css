@@ -5,3 +5,21 @@
 .btn-xs {
   margin: 0 0 10px 10px;
 }
+
+
+/************  Lot Summary Page! */
+.all-items {
+  list-style-type: none;
+}
+
+.this-item {
+  text-align: center;
+  width: 20%;
+  /*border: 1px solid #ccc;*/
+  display: inline-block;
+}
+
+.this-item img {
+  max-height: 100px;
+  max-width: 100px;
+}

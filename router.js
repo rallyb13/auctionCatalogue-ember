@@ -5,5 +5,8 @@ Auction.Router.map(function() {
   this.resource('department', {path: '/:department_id'}, function() {
     this.resource('new-lot');
   });
-  this.resource('lot', {path: '/:lot_id'});
+  this.resource('lot', {path: '/:lot_id'}, function() {
+    this.resource('new-item');
+  });
+  this.resource('item', {path: '/:item_id'});
 });

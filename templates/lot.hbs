@@ -4,17 +4,21 @@
 {{outlet}}
 
 <h3 class="block-to-inline">Items</h3>
-<!-- {{#link-to 'new-item' this.id}} -->
-  <button class="btn btn-xs btn-info">Add new?</button>
-<!-- {{/link-to}} -->
+  {{#link-to 'new-item' this.id}}
+    <button class="btn btn-xs btn-info">Add new?</button>
+  {{/link-to}}
 <hr />
 
+<ul class="all-items">
 {{#each items}}
-  <div class="this-item">
-    <img {{bind-attr src=imageURL}}>
-    <h5>{{name}}</h5>
-  </div>
+
+    <li class="this-item">
+      <img {{bind-attr src=imageURL}}>
+      <h5>{{name}}</h5>
+    </li>
+
 {{/each}}
+</ul>
 
 <div class="footer">
   <button {{action "delete"}} class="btn btn-xs btn-danger">
