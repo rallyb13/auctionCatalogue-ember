@@ -1,0 +1,14 @@
+<form>
+  <div class="form-group">
+    <label for="lotName">The name of this department:</label>
+    {{input type="text" id="lotName" value=lotName class="form-control" required="true"}}
+  </div>
+
+  <div class="form-group">
+    <label for="lotImage">The quintessential image to represent this department:</label>
+    {{input type="text" id="lotImage" value=lotImage class="form-control"}}
+  </div>
+
+  <button class="btn btn-primary" {{action "save"}}>Add Lot</button>
+</form>
+<br />

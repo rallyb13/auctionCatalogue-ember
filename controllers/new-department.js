@@ -7,13 +7,7 @@ Auction.NewDepartmentController = Ember.Controller.extend({
       });
       newDept.save();
       this.transitionToRoute('departments');
-    },
+    }
 
-    // delete: function() {
-    //   if (confirm("Must you? Reeeally?")) {
-    //     this.get('model').destroyRecord();
-    //     this.transitionToRoute('departments');
-    //   }
-    // }
   }
 });

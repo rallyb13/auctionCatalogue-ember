@@ -1,0 +1,23 @@
+<h2>{{title}}</h2>
+<hr />
+
+{{outlet}}
+
+<h3 class="block-to-inline">Lots</h3>
+{{#link-to 'new-lot' this.id}}
+  <button class="btn btn-xs btn-info">Add new?</button>
+{{/link-to}}
+<hr />
+
+{{#each lots}}
+  <div class="this-lot">
+    <img {{bind-attr src=imageURL}}>
+    <h5>{{name}}</h5>
+  </div>
+{{/each}}
+
+<div class="footer">
+  <button {{action "delete"}} class="btn btn-xs btn-danger">
+    Delete {{title}} department?
+  </button>
+</div>
