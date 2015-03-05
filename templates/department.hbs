@@ -10,10 +10,12 @@
 <hr />
 
 {{#each lots}}
-  <div class="this-lot">
-    <img {{bind-attr src=imageURL}}>
-    <h5>{{name}}</h5>
-  </div>
+  {{#link-to 'lot' this.id}}
+    <div class="this-lot">
+      <img {{bind-attr src=imageURL}}>
+      <h5>{{name}}</h5>
+    </div>
+  {{/link-to}}
 {{/each}}
 
 <div class="footer">
