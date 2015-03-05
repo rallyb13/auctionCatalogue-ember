@@ -1,0 +1,13 @@
+<img class="item-image" {{bind-attr src=imageURL}}>
+<h2>{{name}}</h2>
+
+<div class="item-detail">
+  <p>{{description}}</p>
+  <p>Price: ${{price}}</p>
+</div>
+
+<div class="footer">
+  <button {{action "delete"}} class="btn btn-xs btn-danger">
+    Delete {{name}} item?
+  </button>
+</div>

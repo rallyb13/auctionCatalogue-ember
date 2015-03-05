@@ -11,12 +11,12 @@
 
 <ul class="all-items">
 {{#each items}}
-
+  {{#link-to 'item' this.id}}
     <li class="this-item">
       <img {{bind-attr src=imageURL}}>
       <h5>{{name}}</h5>
     </li>
-
+  {{/link-to}}
 {{/each}}
 </ul>
 

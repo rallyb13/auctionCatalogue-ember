@@ -10,11 +10,12 @@
 /************  Lot Summary Page! */
 .all-items {
   list-style-type: none;
+  margin: 0;
 }
 
 .this-item {
   text-align: center;
-  width: 20%;
+  width: 23.5%;
   /*border: 1px solid #ccc;*/
   display: inline-block;
 }
@@ -22,4 +23,15 @@
 .this-item img {
   max-height: 100px;
   max-width: 100px;
+}
+
+/************ Specific Item Page */
+.item-detail {
+  padding-left: 3%;
+}
+
+.item-image {
+  float: right;
+  padding-right: 5%;
+  min-width: 540px; /*use media-queries to make mobile-friendly!*/
 }
