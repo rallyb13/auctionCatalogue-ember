@@ -6,13 +6,39 @@
   margin: 0 0 10px 10px;
 }
 
+.footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
 
-/************  Lot Summary Page! */
-.all-items {
+ul {
   list-style-type: none;
   margin: 0;
 }
 
+/************  Depts/Home Page! */
+.this-department{
+  text-align: center;
+  width: 40%;
+  display: inline-block;
+  margin: 0 3.5%;
+}
+
+/************  Department Page! */
+.this-lot{
+  text-align: center;
+  display: inline-block;
+  width: 25%;
+  margin: 0 3.5%;
+}
+
+.this-lot img {
+  max-height: 200px;
+  max-width: 200px;
+}
+
+/************  Lot Summary Page! */
 .this-item {
   text-align: center;
   width: 23.5%;

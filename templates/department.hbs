@@ -9,14 +9,16 @@
   {{/link-to}}
 <hr />
 
-{{#each lots}}
-  {{#link-to 'lot' this.id}}
-    <div class="this-lot">
-      <img {{bind-attr src=imageURL}}>
-      <h5>{{name}}</h5>
-    </div>
-  {{/link-to}}
-{{/each}}
+<ul>
+  {{#each lots}}
+    {{#link-to 'lot' this.id}}
+      <div class="this-lot">
+        <img {{bind-attr src=imageURL}}>
+        <h5>{{name}}</h5>
+      </div>
+    {{/link-to}}
+  {{/each}}
+</ul>
 
 <div class="footer">
   <button {{action "delete"}} class="btn btn-xs btn-danger">

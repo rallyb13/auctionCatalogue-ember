@@ -6,12 +6,13 @@
 {{/link-to}}
 <hr />
 
-
-{{#each}}
-  {{#link-to 'department' this.id}}
-    <div class="this-department">
-      <img {{bind-attr src=imageURL}}>
-      <h5>{{title}}</h5>
-    </div>
-  {{/link-to}}
-{{/each}}
+<ul>
+  {{#each}}
+    {{#link-to 'department' this.id}}
+      <li class="this-department">
+        <img {{bind-attr src=imageURL}}>
+        <h5>{{title}}</h5>
+      </li>
+    {{/link-to}}
+  {{/each}}
+</ul>
